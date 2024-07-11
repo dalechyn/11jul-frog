@@ -68,7 +68,7 @@ const ProfileDetails = ({ id }: ProfileDetailsProps) => {
             ' • How can I help you? • Maker of /feesh \n' +
             '• Hypersub:  /mega-big-town'
         };
-        setProfile(data);
+        setProfile(data as any);
         setLoading(false);
       };
 

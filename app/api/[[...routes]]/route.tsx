@@ -94,6 +94,7 @@ app.frame('/', async (c) => {
   let intents: any = [];
   try {
     if (username) {
+      // @ts-expect-error
       existingFan = await getFanByUsername(username);
     }
   } catch (error) {
@@ -142,6 +143,7 @@ app.frame('/', async (c) => {
 
 app.image('/existing-image/:id', async (c) => {
   const id = extractLastValue(c.req.path);
+  // @ts-expect-error
   let existingFan: Fan | false = await getFanByUsername(id); // sending to simplified route that just returns our value
   let bio;
   var fanColor: string = '#E75F58';
