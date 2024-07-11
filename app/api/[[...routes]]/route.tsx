@@ -80,7 +80,7 @@ const app = new Frog({
   //hub: neynar({ apiKey: 'NEYNAR_FROG_FM' })
 }).use(
     neynar({
-      apiKey: process.env.NEXT_PUBLIC_NEYNAR_API || '',
+      apiKey: process.env.NEXT_PUBLIC_NEYNAR_API || 'NEYNAR_FROG_FM',
       features: ['interactor', 'cast'],
     }),
   )
