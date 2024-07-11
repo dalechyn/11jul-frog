@@ -5,7 +5,7 @@ import { SuspendedComponent } from '../../suspense-component';
 
 export async function generateMetadata(props: any): Promise<Metadata> {
   const url = process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'
-  const frameMetadata = await getFrameMetadata(`${url}/api?username=${props.params.id}`);
+  const frameMetadata = await getFrameMetadata(`${url}/api/${props.params.id}`);
   console.log('meta', frameMetadata);
   return {
     other: frameMetadata,
