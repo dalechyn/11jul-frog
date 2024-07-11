@@ -85,9 +85,9 @@ const app = new Frog({
     }),
   )
 
-app.frame('/', async (c) => {
+app.frame('/:username?', async (c) => {
   const { buttonValue, inputText, status } = c;
-  const username = c.req.query('username') || false;
+  const username = c.req.param('username') || false;
   const activeLink = 1;
   let existingFan: Fan | false = false;
   app.imageAspectRatio = '1.91:1';
