@@ -4235,10 +4235,10 @@ fresh@0.5.2:
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
   integrity sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==
 
-frog@latest:
-  version "0.12.3"
-  resolved "https://registry.npmjs.org/frog/-/frog-0.12.3.tgz"
-  integrity sha512-11e+8Xw6fw3ndKGbVkGiR/9a45xAXOukSvHhL5g1ugoGtMarGM308CkfGrqxjRstFzRFLUWcz3EAPAAX+qQ/5Q==
+frog@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.npmjs.org/frog/-/frog-0.14.1.tgz"
+  integrity sha512-RsIEWDNVnsVCMTxHSu47dUGFLDmf2KxkuRTzqnVr1VrTyoBu19sPJ63wiE1iFnLPYPFfj1ISPlv60MfUnNg75w==
   dependencies:
     "@bufbuild/protobuf" "^1.7.2"
     "@hono/node-server" "^1.11.2"
