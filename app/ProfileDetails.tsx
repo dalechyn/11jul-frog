@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { supabase } from './utils/supabaseClient'; // Adjusted path
 import Image from 'next/image';
 import { useAccount } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';

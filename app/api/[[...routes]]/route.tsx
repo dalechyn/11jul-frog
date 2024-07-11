@@ -6,8 +6,6 @@ import { serveStatic } from 'frog/serve-static'
 import { neynar, type NeynarVariables } from 'frog/middlewares'
 import { createSystem } from 'frog/ui'
 import { handle } from 'frog/next'
-import { createClient } from '@supabase/supabase-js'
-import { supabase } from '../../utils/supabaseClient'
 import * as dotenv from 'dotenv';
 
 dotenv.config();
@@ -90,6 +88,7 @@ const app = new Frog({
 app.frame('/', async (c) => {
   const { buttonValue, inputText, status } = c;
   const username = c.req.query('username') || false;
+  const activeLink = 1;
   let existingFan: Fan | false = false;
   app.imageAspectRatio = '1.91:1';
   let intents: any = [];
