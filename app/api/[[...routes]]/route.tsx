@@ -61,7 +61,7 @@ const { vars } = createSystem({
 const app = new Frog({
   assetsPath: '/',
   basePath: '/api',
-  browserLocation: '/create',
+  // browserLocation: '/create',
   title: 'Fan.io | FanPage',
   imageOptions: {
     fonts: [
